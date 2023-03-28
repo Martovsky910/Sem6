@@ -12,24 +12,11 @@ public class Program {
         var a = filter(sc);
         var b = Filter(getNbList(), a);
         if(b.size()==0){
-            System.out.println("YTTTTTTTTTTTTTTTTTT");
+            System.out.println("Нет критерий для поиска :С");
         }else{
 
             System.out.println(b.toString());
         }
-    //     ArrayList<NoteBook> filteredNotebooks = Filter(getNbList(), filter(sc)); if(filteredNotebooks.size()==0)
-    // {
-    //     System.out.println("Нет ноутбуков, удовлетворяющих критерию фильтрации");
-    // }else
-    // {
-    //     for (NoteBook notebook : filteredNotebooks) {
-    //         System.out.println(notebook.getModel() + " "
-    //                 + " " + notebook.getRam() + " " + notebook.getHdd() + " " + notebook.getOs() + " "
-    //                 + notebook.getColor());
-    //     }
-//}
-
-
     }
 
     public static ArrayList<NoteBook> Filter(ArrayList<NoteBook> nb, HashMap<String, String> filter) {
